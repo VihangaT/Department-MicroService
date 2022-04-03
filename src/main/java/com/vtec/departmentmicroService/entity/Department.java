@@ -15,8 +15,9 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Department {
-    @Id
+
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
     private long departmentId;
     private String departmentName;
     private  String departmentAddress;
